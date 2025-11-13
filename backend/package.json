@@ -1,0 +1,39 @@
+{
+  "name": "ride-pool-backend",
+  "version": "1.0.0",
+  "description": "Ride Pool Backend API",
+  "main": "dist/app.js",
+  "scripts": {
+    "dev": "nodemon src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "migrate": "cd ../supabase && supabase db push"
+  },
+  "keywords": [
+    "ride-pooling",
+    "transport"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.81.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-validator": "^7.3.0",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.1",
+    "winston": "^3.18.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5",
+    "@types/express-validator": "^2.20.33",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^24.10.1",
+    "nodemon": "^3.1.11",
+    "supabase": "^2.58.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
